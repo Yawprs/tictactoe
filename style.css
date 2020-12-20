@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+.gameboard {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "header header header"
+                            "board1 board2 board3"
+                            "board4 board5 board6"
+                            "board7 board8 board9"
+                            "footerTurn footerWin footerScore"
+                            "footerReset footerReset footerReset"                                                       
+}
+
+.header {
+    text-align: center;
+    grid-area: header;
+    /* border: 2px solid black; */
+}
+
+
+.board1 { 
+    grid-area: board1;
+    border: 2px solid black;
+}
+
+.board2 { 
+    grid-area: board2;
+    border: 2px solid black;
+}
+
+.board3 { 
+    grid-area: board3;
+    border: 2px solid black;
+}
+
+.board4 { 
+    grid-area: board4;
+    border: 2px solid black;
+}
+
+.board5 { 
+    grid-area: board5;
+    border: 2px solid black;
+}
+
+.board6 { 
+    grid-area: board6;
+    border: 2px solid black;
+}
+
+.board7 { 
+    grid-area: board7;
+    border: 2px solid black;
+}
+
+.board8 { 
+    grid-area: board8;
+    border: 2px solid black;
+}
+
+.board9 { 
+    grid-area: board9;
+    border: 2px solid black;
+}
+
+.footerTurn {
+    grid-area: footerTurn;
+    /* border: 2px solid black; */
+}
+
+.footerWin {
+    grid-area: footerWin;
+    /* border: 2px solid black; */
+}
+
+.footerScore {
+    grid-area: footerScore;
+    /* border: 2px solid black; */
+}
+
+.footerReset {
+    grid-area: footerReset;
+    border-: 2px  solid black;
+    text-align: center;
+    font-size: 48px;
+    background-color: red;
+    color:black;
+}
+
+#rematch {
+    justify-items: center;
+    align-items: center;
+    font-size: 32px;
+    width: 200px;
+    height: 60px;
+}
